@@ -5,7 +5,7 @@ while True:
     print('Relauncher: Launching...')
     if n > 0:
         print(f'\tRelaunch count: {n}')
-    os.system("python scripts/webui.py --gfpgan-cpu --esrgan-cpu --optimized")
+    os.system("python scripts/webui.py --extra-models-cpu  --optimized")
     print('Relauncher: Process is ending. Relaunching in 0.5s...')
     n += 1
     time.sleep(0.5)
